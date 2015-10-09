@@ -52,3 +52,21 @@ import os
 print os.path.realpath(__file__)
 ```
 
+### 5. How to get the unique values (distinct values) in a list?
+
+```
+>>> test = [1,2,3,2,1,4,5,4]
+>>> test
+[1, 2, 3, 2, 1, 4, 5, 4]
+
+>>> set(test)
+set([1, 2, 3, 4, 5])
+>>> list(set(test))
+[1, 2, 3, 4, 5]
+```
+
+```
+>>> test = ["a", "b", "a", "c"]
+>>> list(set(test))
+['a', 'c', 'b']
+```
