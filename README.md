@@ -47,7 +47,8 @@ pwd.struct_passwd(pw_name='nus', pw_passwd='********', pw_uid=501, pw_gid=20, pw
 ### 4. How to get the path of the current script?
 
 ```
+# Please note this only works for script, and does NOT work interactively.
 import os
 print os.path.realpath(__file__)
 ```
-Please note this only works for script, and does NOT work interactively.
+
